@@ -1,0 +1,46 @@
+.fondo {
+  background-image:url("../assets/img/background-2.jpg");
+  background-size:100%; 
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(5px);
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index:-100; 
+}
+
+a {
+	color:yellow; 
+	transition: 500ms ease; 
+}
+
+a:hover {
+	text-decoration:none;
+	color:red;
+}
+
+.formulario {
+  width:75%; 
+  margin-top:4%; 	
+  margin-left:auto;
+  margin-right:auto; 
+  background-image:url('../assets/img/background.jpg');
+  padding:10px;  
+  opacity:0.9; 
+  max-width:800px; 
+  min-width:500px; 
+}
+
+.btn {
+	color:#fff; 
+	background-color:#3ade36;
+	transition:500ms ease; 
+}
+
+.btn:hover {
+	background-color:red;
+}

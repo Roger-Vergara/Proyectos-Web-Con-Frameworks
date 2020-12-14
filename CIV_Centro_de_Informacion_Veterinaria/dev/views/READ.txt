@@ -1,0 +1,13 @@
+--> Informacion sobre las subpagina <--
+
+  Cada subpagina fue colocada en una carpeta aparte para no generar 
+confusión, pero los scripts, estilos y operaciones php estan juntas
+en las carpetas: "php", "styles", "scrips".
+
+English:
+
+--> Information about the subpages <--
+
+Each subpage was placed in a separate folder to avoid confusion, but
+ the scripts, styles and php operations are together in the 
+folders: "php", "styles", "scrips".

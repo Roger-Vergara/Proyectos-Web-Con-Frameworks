@@ -1,0 +1,7 @@
+.navbar-expand-lg {
+	transition:500ms ease; 
+}
+
+.navbar-expand-lg:hover {
+	background-color:red ;
+}

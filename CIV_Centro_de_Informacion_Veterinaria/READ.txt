@@ -1,0 +1,2 @@
+La estructuracion de las carpetas esta hecha para un
+proyecto simple

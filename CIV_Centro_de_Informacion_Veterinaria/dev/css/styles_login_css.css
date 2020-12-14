@@ -1,0 +1,91 @@
+.fondo {
+	background:url("../assets/img/background-2.jpg");
+	background-size:100%; 
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(5px);
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index:-100; 
+}
+
+body { 
+	background:#406363;
+	color:#000; 
+}
+
+.titulo_formulario {
+	color:#fff;
+	text-align:center; 	
+}
+
+.contenedor_formulario_styles {
+	transition:500ms ease;
+}
+
+.contenedor_formulario {
+	background-image:url("../assets/img/background.jpg");  
+	background-size:100%; 
+	margin:auto;
+	margin-top: 6%;
+	padding:20px;  
+	width: 70%;
+	opacity:0.9;  
+	max-width:700px; 
+	min-width:500px; 
+}
+
+.contenedor_crear_cuenta {
+	display:block; 
+}
+
+.crear_cuenta {
+	display:inline-block;
+	padding:3px;  
+	border-radius:10%; 
+	background-color:#3ade36;
+	color:#fff;
+	transition:500ms ease; 
+}
+
+.crear_cuenta:hover {
+	color:#fff;
+	background-color:red;
+	text-decoration:none; 
+}
+
+.btn {
+	background-color:#3ade36; 
+	transition:500ms ease;   
+}
+
+.btn:hover {
+	background-color:red; 
+	color:#fff;  
+	border-color:red; 
+}
+
+.texto_desarrollador { 
+	text-align:center;
+	padding:10px;
+	margin:auto;
+	max-width:700px;
+	min-width:250px;  
+}
+
+.link_desarrolador {
+	color:#fff; 
+	text-decoration:none;
+	transition:500ms ease;  
+}
+
+.link_desarrolador:hover {
+	text-decoration:none;
+	color:red;  
+}
+

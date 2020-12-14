@@ -1,0 +1,3 @@
+Esta carpeta contiene los elementos finales que se
+subiran al servidor, tal ves utilizando preprocesadores
+para mejorar la carga de los elementos (tal ves).
