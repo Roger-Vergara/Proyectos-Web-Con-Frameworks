@@ -23,7 +23,7 @@
 <div class="fondo"></div> 
 
 <!--Formulario de bootstrap-->
-<form class="formulario" method="post" action="../../php/called_to_insert.php" enctype="multipart/form-data">
+<form class="formulario" action="../../php/called_to_insert.php" method="post" enctype="multipart/form-data" id="enviar_datos">
   <div div="row">
     <a href="../login.php" class="col-md-2"><b>Volver a Inicio</b></a>
   </div>
@@ -31,65 +31,63 @@
 <div class="container"> <!-- El container sirbe para centrar nuestra todo dentro
 del sistema de rejillas-->
 
+  <!--La existencia de este div, es solo para generar una ventana informativa-->
+  <div id="errores"></div>
+
   <div class="row">
-    <h4 class="col-md-2"><b>Registrate</b></h4>
+    <h4 class="col-md-2"><b>Registrate</b></h4>    
   </div>
   <div class="row">
       <label for="nombre"  class="col-md-2"><b>Nombre:</b></label>
-      <input type="text" name="nombre" class="form-control col-md-3" id="nombre">
+      <input type="text" required="" name="nombre" class="form-control col-md-3" id="nombre">
       <label for="apellido" class="col-md-2"><b>Apellido:</b></label>
-      <input type="text" name="apellido" class="form-control col-md-3" id="apellido">
+      <input type="text" required="" name="apellido" class="form-control col-md-3" id="apellido">
   </div>
 
   <br>
 
   <div class="row">
       <label for="nombre_usuario" class="col-md-2"><b>Nombre de usuario</b></label>
-      <input type="text" name="nombre_usuario" id="nombre_usuario" class="form-control col-md-3">
+      <input type="text" required="" name="nombre_usuario" id="nombre_usuario" class="form-control col-md-3">
       <label for="correo" class="col-md-2"><b>Corréo:</b></label>
-      <input type="email" name="correo" id="correo" class="form-control col-md-3">
+      <input type="email" required="" name="correo" id="correo" class="form-control col-md-3">
   </div>
 
   <br>
 
   <div class="row">
       <label for="telefono" class="col-md-2"><b>Teléfono</b></label>
-      <input type="tel" name="telefono" id="telefono" class="form-control col-md-3" value="+58">
+      <input type="tel" required="" name="telefono" id="telefono" class="form-control col-md-3" value="+58">
       <label for="fecha_nacimiento" class="col-md-2"><b>Fecha de nacimiento</b></label>
-      <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" class="form-control col-md-3" value="1980-01-01">
+      <input type="date" required="" name="fecha_nacimiento" id="fecha_nacimiento" class="form-control col-md-3" value="1980-01-01">
   </div>
 
   <br>
 
   <div class="row">
       <label for="clave" class="col-md-2"><b>Clave</b></label>
-      <input type="password" name="clave" id="clave" class="form-control col-md-3">
+      <input type="password" required="" name="clave" id="clave" class="form-control col-md-3">
       <label for="verificar_clave" class="col-md-2"><b>Repita la clave</b></label>
-      <input type="text" id="verificar_clave" class="form-control col-md-3">
+      <input type="password" required="" id="verificar_clave" class="form-control col-md-3">
   </div>
 
   <div class="row">
       <label for="ci" class="col-md-2"><b>Cédula</b></label>
-      <input type="number" name="ci" id="ci" class="form-control col-md-3">
+      <input type="number" required="" name="ci" id="ci" class="form-control col-md-3">
 
-      
-      <div class="input-group col-md-5">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroupFileAddon01">Subir</span>
-        </div>
-        <div class="custom-file">
-          <input type="file" class="custom-file-input" id="imagen" aria-describedby="inputGroupFileAddon01" lang="es" accept=".png,.jpg,.jpeg" name="imagen">
-          <label class="custom-file-label" for="inputGroupFile01">Foto de perfil</label>
-        </div>
+      <label for="foto" class="col-md-2"><b>Foto de perfil</b></label>
+      <div class="input-group col-md-3">
+          <input type="file" required="" class="custom-file-input" id="imagen" aria-describedby="inputGroupFileAddon01" lang="es" accept=".png,.jpg,.jpeg" name="imagen">
+          <label class="custom-file-label" for="inputGroupFile01">Seleccione</label>
       </div>
 
 </div>
 
   <br>
 
-  <div class="row">
+  <div class=submit
     <div class="col-md-2">
-      <button type="submit" class="btn">Registrar</button>
+      <button type="submit" id="boton_enviar" class="btn">Registrar</button>
     </div>
   </div>
   
@@ -101,6 +99,9 @@ del sistema de rejillas-->
   <script src="../../js/bootstrap_js/jquery-3.5.1.min.js"></script>
   <script src="../../js/bootstrap_js/popper.min.js"></script>
   <script src="../../js/bootstrap_js/bootstrap.min.js"></script>
+
+  <!--Operaciones mias-->
+  <script src="../../js/form/data_verification.js"></script>
 
 </body>
 </html>
