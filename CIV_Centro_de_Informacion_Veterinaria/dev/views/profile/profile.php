@@ -16,9 +16,19 @@
 
 	<?php 
 
+        session_start();
+
+        if(!isset($_SESSION["visitante"])) { //Si no hay sesion de usuario
+            header("Location: ../login.php");
+        } else {
+
+        }
+
         require("../../php/profile_information.php");
 
 	?>
+
+    <div class="fondo"></div>
 
 <div class="container">
 
@@ -49,6 +59,14 @@
                 		<p><?php echo $datos[3]?></p>
                 	</div>
 
+                    <div class="fecha_nacimiento">
+                        <p><?php echo $datos[5]?></p>
+                    </div>
+
+                    <div class="correo">
+                        <p><?php echo $datos[6]?></p>
+                    </div>
+
                 </div>
 
                 <div class="botones">
@@ -67,6 +85,11 @@
                         <i class="fa fa-behance"></i>
                     </a>
                 </div>
+
+                <form class="acciones" action="../../php/delete_profile.php" method="post" id="formulario">
+                    <input type="submit" class="btn atras" value="Borrar Perfil" />
+                </form>
+               
 
             </div>    
 

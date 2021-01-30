@@ -1,8 +1,8 @@
-<?php 
-
+<?php
+	
 	include "controller.php";
-
+	session_start();
 	$iniciar = new controller();
-	$iniciar->insertar_datos();
+	$iniciar->borrar_datos();
 
 ?>
