@@ -1,3 +1,17 @@
+<?php 
+
+        session_start();
+
+        if(!isset($_SESSION["visitante"])) { //Si no hay sesion de usuario
+            header("Location: ../login.php");
+        } else {
+
+        }
+
+        require("../../php/profile_information.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,7 +19,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>.:CIV:. Perfil de usuario</title>
 
-	<link rel="icon" href="../../assets/icon/icono.png">
+	<link rel="icon" href="https://civ-veterinaria.000webhostapp.com//assets/icon/icon.png">
 
 	<link rel="stylesheet" href="../../css/bootstrap_css/bootstrap.min.css">
 
@@ -14,11 +28,9 @@
 </head>
 <body>
 
-	<?php 
+	
 
-        require("../../php/profile_information.php");
-
-	?>
+    <div class="fondo"></div>
 
 <div class="container">
 
@@ -29,9 +41,11 @@
             	<div class="acciones">
 					<button class="btn atras" id="volver_atras">Volver atras</button> <button id="enviar_a_actualizacion_de_datos" class="btn actualizar">Actualizar perfil</button>
 				</div>
-
+				
+                <br/>
+                
                 <div class="foto" height="300">
-                    <img src="/CIV_centro_de_informacion_veterinaria/dev/tmp_files/<?php echo($datos[4])?>" alt="Fallo en la carga de la imagen">
+                    <img class="imagen" src="/tmp_files/<?php echo($datos[4])?>" alt="Fallo en la carga de la imagen">
                 </div>
 
                 <div class="info">
@@ -48,6 +62,14 @@
                 	<div class="numero_telefono">
                 		<p><?php echo $datos[3]?></p>
                 	</div>
+
+                    <div class="fecha_nacimiento">
+                        <p><?php echo $datos[5]?></p>
+                    </div>
+
+                    <div class="correo">
+                        <p><?php echo $datos[6]?></p>
+                    </div>
 
                 </div>
 
@@ -67,6 +89,13 @@
                         <i class="fa fa-behance"></i>
                     </a>
                 </div>
+                
+                <br/>  
+                
+                <form class="acciones" action="../../php/delete_profile.php" method="post" id="formulario">
+                    <input type="submit" class="btn atras" value="Borrar Perfil" />
+                </form>
+               
 
             </div>    
 

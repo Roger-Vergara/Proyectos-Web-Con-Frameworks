@@ -1,0 +1,52 @@
+ .fondo {
+      background:url("../assets/img/background-2.jpg");
+      background-size:100%; 
+        -webkit-filter: blur(3px);
+        -moz-filter: blur(3px);
+        -o-filter: blur(3px);
+        -ms-filter: blur(3px);
+        filter: blur(5px);
+        position:fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index:-100;
+      }
+      
+        .linea1 {
+          color:#fff;
+          background-color:#fff; 
+      }
+
+      .foto1 {
+        border-radius:5px; 
+      }
+
+      .texto_desarrollador { 
+        text-align:center;
+        padding:10px;
+        margin:auto;
+        max-width:700px;
+        min-width:250px;  
+      }
+
+      .link_desarrolador {
+        color:#fff; 
+        text-decoration:none;
+        transition:500ms ease;  
+      }
+
+      .link_desarrolador:hover {
+      text-decoration:none;
+        color:red;  
+      }     
+
+      .volver{
+        color:white; 
+        transition:150ms ease; 
+      }
+
+      .volver:hover {
+        color:red;  
+      }

@@ -1,3 +1,19 @@
+.fondo {
+	background:url("../assets/img/background-2.jpg");
+	background-size:100%; 
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(5px);
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index:-100; 
+}
+
 .container {
 
 	width:70%;
@@ -5,10 +21,9 @@
 	margin-right:auto;
 	margin-bottom:auto;
 	margin-top:2%;
-	border: 1px solid green;
-
 	max-width:800px;
 	min-width:500px;  
+	opacity:0.9; 
 
 }
 
@@ -40,10 +55,11 @@
 	padding:3px; 
 }
 
-img {
+.imagen {
 	width:240px;
 	height:240px; 
 	border:8px solid red; 
 	opacity:0.8;
 	border-radius:50%;   
 }
+
