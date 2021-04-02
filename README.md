@@ -2,4 +2,4 @@
 > Frameworks y librerias utilizados: Laravel-Bootstrap
 
 ## Deploy
-- CIV_Centro_de_Informacion_Veterinaria(CRUD-BLOG-SIN-LARAVEL): proyectosrogervergara.000webhostapp.com/civ_veterinaria/views/login.php
+- CIV_Centro_de_Informacion_Veterinaria(CRUD-BLOG-SIN-LARAVEL): http://proyectosrogervergara.000webhostapp.com/civ_veterinaria/views/login.php
